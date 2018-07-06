@@ -1,9 +1,10 @@
 $spacing-unit: 16px;
 
 $orange: #ff6600;
-$blue: #1060ad;
-$blue-dark: #0c2a60;
-$blue-shade: #2f6099;
+$blue: #0b4379;
+$blue-dark: darken($blue, 10%);
+$blue-light: lighten($blue, 10%);
+$blue-shade: $blue-light;
 $light-blue: #e9f1ff;
 $purple: #612dbc;
 
