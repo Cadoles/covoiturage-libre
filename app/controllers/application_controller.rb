@@ -18,8 +18,8 @@ class ApplicationController < ActionController::Base
 
     def init_meta_tags
       @meta ||= {
-        title: 'Covoiturage libre',
-        description: 'Covoiturage Libre : faites de la vraie économie du partage, covoiturez gratuitement et librement',
+        title: Rails.application.config.app_name,
+        description: "#{Rails.application.config.app_name} : faites de la vraie économie du partage, covoiturez gratuitement et librement",
         image: 'covoiturage-libre-RS-2018.png',
         author: 'Association Covoiturage libre',
         keywords: 'covoiturage, gratuit, libre, associatif',

@@ -15,7 +15,7 @@ module CovoiturageLibreRails5
     # -- all .rb files in that directory are automatically loaded.
 
     config.authentication_enabled = ENV['AUTHENTICATION_ENABLED'] == 'true'
-    config.app_name = ENV['APP_NAME'] || "Covoiturage-Libre.fr"
+    config.app_name = ENV['APP_NAME'] || "CovoitCrous"
     config.pricing = ENV['PRICING'] == "true"
     config.legacy = ENV['LEGACY'] == "true"
 
