@@ -21,7 +21,7 @@ class City < ApplicationRecord
 
         city = self.find_or_initialize_by(code: h['insee'])
 
-        city.name = h['ville'] == h['ville'].upcase ? h['ville'].titleize : h['ville']
+        city.name = h['libelle']# == h['libelle'].upcase ? h['libelle'].titleize : h['libelle']
         city.postal_code = h['code postal'].split(' ').first
         city.department = h['dep']
         city.region = h['nom region']
