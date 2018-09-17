@@ -60,7 +60,7 @@ namespace :deploy do
 
       copy_config_file "config/database.yml"
       copy_config_file "config/secrets.yml"
-      copy_config_file ".env.production"
+      #copy_config_file ".env.production"
     end
   end
 
