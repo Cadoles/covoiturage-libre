@@ -21,7 +21,7 @@ $bgDefault: #fff;
 
 @media (max-width: $screen-xs-max) {
   .navbar .navbar-brand img {
-    height: 50px;
+    height: 100px;
   }
 
   .navbar .btn {
@@ -63,7 +63,7 @@ $bgDefault: #fff;
 
 .g-navbar__logo-baseline {
   display: block !important;
-  height: 35px !important;
+  height: 64px !important;
   margin-top: ($spacing-unit / 2);
 
   @include mq(tablet) {
