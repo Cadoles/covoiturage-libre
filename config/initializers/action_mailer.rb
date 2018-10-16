@@ -7,7 +7,7 @@ if ENV.has_key?('SMTP_SERVER')
     :domain               => ENV['SMTP_DOMAIN'],
     :user_name            => ENV['SMTP_LOGIN'],
     :password             => ENV['SMTP_PASSWORD'],
-    :authentication       => :plain,
+    :authentication       => ENV['SMTP_AUTHENTICATION'] == 'none' ? nil : ENV['SMTP_AUTHENTICATION'].try(:to_sym),
     :enable_starttls_auto => true#false
   }
   ActionMailer::Base.config.content_type = "text/html"
