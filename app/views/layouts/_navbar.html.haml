@@ -7,7 +7,7 @@
         %span.icon-bar
         %span.icon-bar
       %a.navbar-brand.ml-0{href: root_url}
-        = image_tag 'crous.png', height: '100', alt: 'Logo Covoiturage Libre', class: 'g-navbar__logos g-navbar__logo-entire'
+        = image_tag 'crous.png', height: (controller_name.in?(['home', 'search']) ? '100' : '50'), alt: 'Logo Covoiturage Libre', class: 'g-navbar__logos g-navbar__logo-entire'
         = image_tag 'crous.png', height: '64', alt: 'Logo Covoiturage Libre baseline', class: 'g-navbar__logos g-navbar__logo-baseline'
 
     #navbar.navbar-collapse.collapse
